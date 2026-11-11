@@ -3,5 +3,5 @@
 **Group Members:**
 - Jehan
 - Reka
-- Joao Pedro Moro Machado
+- Joao Pedro
 - Lorenzo
