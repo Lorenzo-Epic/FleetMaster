@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: appdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    depends_on: [db]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/appdb
+      SPRING_DATASOURCE_USERNAME: appuser
+      SPRING_DATASOURCE_PASSWORD: example
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:
