@@ -38,3 +38,7 @@ docker compose down
 
 PostgreSQL 16 stores its data in the Docker named volume `postgres_data`, which
 survives `docker compose down`. Adding `--volumes` deletes that database data.
+
+
+## Rules:
+- When creating a PR, if the code changed is different from the Class Diagram, ERD or other documentation, the modified documentation must be changed to reflect that and be added to the PR
