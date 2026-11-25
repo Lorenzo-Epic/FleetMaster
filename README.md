@@ -39,8 +39,14 @@ docker compose down
 PostgreSQL 16 stores its data in the Docker named volume `postgres_data`, which
 survives `docker compose down`. Adding `--volumes` deletes that database data.
 
+<<<<<<< HEAD
 ## Secrets
 
 In repository root, create a directory named `.secrets`.
 In that directory, create a file 'postgres_password.txt'.
 In that file, put a password for the database
+=======
+
+## Rules:
+- When creating a PR, if the code changed is different from the Class Diagram, ERD or other documentation, the modified documentation must be changed to reflect that and be added to the PR
+>>>>>>> 96f9fc20fd23118c56f5c5f122aaa88d7670b915

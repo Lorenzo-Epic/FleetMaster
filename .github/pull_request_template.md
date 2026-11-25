@@ -6,7 +6,7 @@ Describe the change and why it is needed.
 
 - [ ] This PR covers one feature or focused change.
 - [ ] This PR targets `main`.
-- [ ] I checked that these changes contain no secrets or customer data.
+- [ ] I checked that these changes contain no secrets.
 - [ ] I reviewed and tested the code
 - [ ] AI was used to help me solve this issue
 
